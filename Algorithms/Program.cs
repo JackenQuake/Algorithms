@@ -29,6 +29,7 @@ namespace Algorithms {
         public string ShowMenu(int x, int y) {
             int i;
             Console.CursorVisible = false;
+            Array.Sort(items, 0, num - 1);
             for (i = 0; i < num; i++) ShowItem(x, y, i, (i == 0));
             for (i = 0; true;) {
                 switch (Console.ReadKey(true).Key) {
