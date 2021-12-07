@@ -9,8 +9,9 @@ namespace Algorithms {
     class Menu {
         private string[] items;
         private int num, max;
-        public Menu(int _max) {
-            max = _max; items = new string[max]; num = 0;
+        private int width;
+        public Menu(int _max, int _width) {
+            max = _max; items = new string[max]; num = 0; width = _width;
         }
         public void Reset() {
             num = 0;
@@ -24,7 +25,7 @@ namespace Algorithms {
             Console.SetCursorPosition(x, y + i);
             if (Selected) { Console.BackgroundColor = ConsoleColor.Cyan; Console.ForegroundColor = ConsoleColor.Black; }
             else { Console.BackgroundColor = ConsoleColor.Blue; Console.ForegroundColor = ConsoleColor.White; }
-            Console.Write($"  {items[i],-12}  ");
+            Console.Write($"  {items[i]}  "); for (int j = items[i].Length; j < width; j++) Console.Write(" ");
         }
         public string ShowMenu(int x, int y) {
             int i;
@@ -50,7 +51,7 @@ namespace Algorithms {
     }
     class Program {
         static void Main(string[] args) {
-            var menu = new Menu(20);
+            var menu = new Menu(20, 12);
             string str, lesson, task, method;
             int a, b;
             menu.Reset();
