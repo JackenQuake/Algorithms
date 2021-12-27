@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfScriptCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ScriptCommand>
+    <Class>Lesson1_Task1_Prime</Class>
+    <Task>Main_Automatic</Task>
+  </ScriptCommand>
+  <ScriptCommand>
+    <Class>Lesson1_Task3_Fibo</Class>
+    <Task>Main_NonRecursive</Task>
+  </ScriptCommand>
+  <ScriptCommand>
+    <Class>Lesson5_Task_BnrSrc</Class>
+    <Task>Main_DFS</Task>
+  </ScriptCommand>
+</ArrayOfScriptCommand>

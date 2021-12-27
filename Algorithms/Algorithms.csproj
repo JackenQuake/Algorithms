@@ -257,6 +257,7 @@
     <Compile Include="Lesson3.cs" />
     <Compile Include="Lesson4.cs" />
     <Compile Include="Lesson5.cs" />
+    <Compile Include="Lesson6.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
