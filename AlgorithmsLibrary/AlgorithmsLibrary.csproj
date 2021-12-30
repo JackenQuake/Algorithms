@@ -5,19 +5,18 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{978D94C0-B973-4E1D-B50C-0C691CF762A4}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Algorithms</RootNamespace>
-    <AssemblyName>Algorithms</AssemblyName>
+    <ProjectGuid>{6D2A36DF-0FE0-44F1-9431-BAC504B6D4F5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AlgorithmsLibrary</RootNamespace>
+    <AssemblyName>AlgorithmsLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -27,7 +26,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -36,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AlgorithmsMenuLibrary">
+      <HintPath>..\AlgorithmsMenuLibrary\bin\Release\AlgorithmsMenuLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="BenchmarkDotNet, Version=0.13.1.0, Culture=neutral, PublicKeyToken=aa0ca2f9092cefc4, processorArchitecture=MSIL">
       <HintPath>packages\BenchmarkDotNet.0.13.1\lib\netstandard2.0\BenchmarkDotNet.dll</HintPath>
     </Reference>
@@ -252,18 +253,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Lesson2.cs" />
     <Compile Include="Lesson1.cs" />
+    <Compile Include="Lesson2.cs" />
     <Compile Include="Lesson3.cs" />
     <Compile Include="Lesson4.cs" />
     <Compile Include="Lesson5.cs" />
     <Compile Include="Lesson6.cs" />
     <Compile Include="Lesson7.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
